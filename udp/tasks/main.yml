@@ -1,0 +1,7 @@
+---
+
+- name: listen on udp
+  template:
+    src: udp.conf
+    dest: /etc/rsyslog.d/10-udp.conf
+  notify: reload rsyslog

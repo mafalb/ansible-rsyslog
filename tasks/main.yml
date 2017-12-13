@@ -1,0 +1,7 @@
+---
+
+- name: rsyslog is running
+  service:
+    name: rsyslog
+    state: started
+    enabled: yes
